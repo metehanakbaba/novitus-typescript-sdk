@@ -1,6 +1,6 @@
 # Novitus SDK for TypeScript/JavaScript
 
-[![npm version](https://img.shields.io/npm/v/@novitus/sdk.svg)](https://www.npmjs.com/package/@novitus/sdk)
+[![npm version](https://img.shields.io/npm/v/novitus-fiscal-sdk.svg)](https://www.npmjs.com/package/novitus-fiscal-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
@@ -21,19 +21,19 @@ UnOfficial TypeScript/JavaScript SDK for the Novitus Fiscal Printer API. This SD
 ## Installation
 
 ```bash
-npm install @novitus/sdk
+npm install novitus-fiscal-sdk
 ```
 
 Or with yarn:
 
 ```bash
-yarn add @novitus/sdk
+yarn add novitus-fiscal-sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { NovitusClient, Receipt, VATRate } from '@novitus/sdk';
+import { NovitusClient, Receipt, VATRate } from 'novitus-fiscal-sdk';
 
 // Initialize the client
 const client = new NovitusClient({
@@ -72,7 +72,7 @@ console.log('Receipt sent!', response.request.id);
 ### Client Initialization
 
 ```typescript
-import { NovitusClient } from '@novitus/sdk';
+import { NovitusClient } from 'novitus-fiscal-sdk';
 
 const client = new NovitusClient({
   host: 'http://localhost:8888',
@@ -102,7 +102,7 @@ await client.refreshToken();
 #### Receipt
 
 ```typescript
-import { Receipt, VATRate } from '@novitus/sdk';
+import { Receipt, VATRate } from 'novitus-fiscal-sdk';
 
 const receipt: Receipt = {
   items: [
@@ -128,7 +128,7 @@ const response = await client.sendReceipt(receipt, true);
 #### Invoice
 
 ```typescript
-import { Invoice, VATRate } from '@novitus/sdk';
+import { Invoice, VATRate } from 'novitus-fiscal-sdk';
 
 const invoice: Invoice = {
   info: {
@@ -161,7 +161,7 @@ const response = await client.sendInvoice(invoice, true);
 #### Non-Fiscal Printout
 
 ```typescript
-import { Printout } from '@novitus/sdk';
+import { Printout } from 'novitus-fiscal-sdk';
 
 const printout: Printout = {
   lines: [
@@ -209,7 +209,7 @@ await client.deleteDocument('receipt', requestId);
 The SDK provides an enum for Polish VAT rates:
 
 ```typescript
-import { VATRate } from '@novitus/sdk';
+import { VATRate } from 'novitus-fiscal-sdk';
 
 VATRate.A // 23%
 VATRate.B // 8%
@@ -223,7 +223,7 @@ VATRate.G // Special
 ## Payment Methods
 
 ```typescript
-import { PaymentMethod } from '@novitus/sdk';
+import { PaymentMethod } from 'novitus-fiscal-sdk';
 
 PaymentMethod.Card
 PaymentMethod.Cash
@@ -242,7 +242,7 @@ import {
   NovitusApiError,
   NovitusNetworkError,
   NovitusAuthError,
-} from '@novitus/sdk';
+} from 'novitus-fiscal-sdk';
 
 try {
   await client.sendReceipt(receipt, true);
@@ -305,7 +305,7 @@ import {
   TokenResponse,
   QueueResponse,
   CheckDocumentStatusResponse,
-} from '@novitus/sdk';
+} from 'novitus-fiscal-sdk';
 ```
 
 ## Validation

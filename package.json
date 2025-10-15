@@ -1,5 +1,5 @@
 {
-  "name": "@novitus/sdk",
+  "name": "novitus-fiscal-sdk",
   "version": "1.0.0",
   "description": "UnOfficial TypeScript/JavaScript SDK for Novitus Fiscal Printer API - Type-safe client for receipts, invoices, and non-fiscal printouts",
   "main": "dist/index.js",
