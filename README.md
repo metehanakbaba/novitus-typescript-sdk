@@ -2,6 +2,10 @@
 
 [![npm version](https://img.shields.io/npm/v/@novitus/sdk.svg)](https://www.npmjs.com/package/@novitus/sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
+[![GitHub Stars](https://img.shields.io/github/stars/metehanakbaba/novitus-typescript-sdk.svg)](https://github.com/metehanakbaba/novitus-typescript-sdk/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/metehanakbaba/novitus-typescript-sdk.svg)](https://github.com/metehanakbaba/novitus-typescript-sdk/issues)
 
 UnOfficial TypeScript/JavaScript SDK for the Novitus Fiscal Printer API. This SDK provides a clean, type-safe interface for interacting with Novitus fiscal printers.
 
