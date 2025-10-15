@@ -335,7 +335,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Support
 
 For issues and questions:
-- GitHub Issues: [Create an issue](https://github.com/your-repo/issues)
+- GitHub Issues: [Create an issue](https://github.com/metehanakbaba/novitus-typescript-sdk/issues)
 - Documentation: [https://noviapi.novitus.pl/en/](https://noviapi.novitus.pl/en/)
 
 
