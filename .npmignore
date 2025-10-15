@@ -1,0 +1,13 @@
+src/
+examples/
+tests/
+*.test.ts
+tsconfig.json
+.eslintrc.json
+.prettierrc
+.gitignore
+.git/
+node_modules/
+coverage/
+*.log
+

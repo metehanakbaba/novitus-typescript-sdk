@@ -1,0 +1,73 @@
+{
+  "name": "@novitus/sdk",
+  "version": "1.0.0",
+  "description": "UnOfficial TypeScript/JavaScript SDK for Novitus Fiscal Printer API - Type-safe client for receipts, invoices, and non-fiscal printouts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "build:watch": "tsc --watch",
+    "build:examples": "tsc -p tsconfig.examples.json",
+    "prepublishOnly": "npm run lint && npm run build",
+    "prepare": "npm run build",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"examples/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"examples/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules"
+  },
+  "keywords": [
+    "novitus",
+    "fiscal",
+    "printer",
+    "receipt",
+    "invoice",
+    "pos",
+    "sdk",
+    "typescript",
+    "javascript",
+    "api-client",
+    "fiscal-printer",
+    "e-receipt",
+    "vat",
+    "polish-fiscal",
+    "cash-register"
+  ],
+  "author": "Novitus SDK Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/novitus-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/novitus-sdk/issues"
+  },
+  "homepage": "https://github.com/your-org/novitus-sdk#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
