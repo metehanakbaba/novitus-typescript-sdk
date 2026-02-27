@@ -9,15 +9,6 @@
 
 UnOfficial TypeScript/JavaScript SDK for the Novitus Fiscal Printer API. This SDK provides a clean, type-safe interface for interacting with Novitus fiscal printers.
 
-## Features
-
-- 🔒 **Type-Safe** - Full TypeScript support with comprehensive type definitions
-- 🚀 **Easy to Use** - Simple, intuitive API design
-- ✅ **Built-in Validation** - Automatic validation of documents before sending
-- 🔄 **Auto Token Management** - Automatic token refresh and expiration handling
-- 🛡️ **Error Handling** - Custom error classes for better error management
-- 📝 **Well Documented** - Extensive documentation and examples
-
 ## Installation
 
 ```bash
